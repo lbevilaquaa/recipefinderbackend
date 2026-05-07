@@ -4,7 +4,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "prisma db push && prisma db seed && node server.js",
     "dev": "node --watch server.js",
     "postinstall": "prisma generate"
   },
